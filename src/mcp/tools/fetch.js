@@ -62,10 +62,9 @@ export function registerFetchTool(server) {
             }
         }
 
-
         return {content: [{
-          type:"json",
-          json: {results: result}
+          type:"text",
+          text: JSON.stringify(result)
         }]};
       } catch (e) {
         return {
