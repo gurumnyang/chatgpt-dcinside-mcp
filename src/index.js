@@ -14,6 +14,12 @@ const app = express();
 // JSON 페이로드 파서 (최대 1MB)
 app.use(express.json({ limit: '1mb' }));
 
+//요청 로깅
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
 // Minimal CORS 설정
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
