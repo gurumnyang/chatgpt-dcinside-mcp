@@ -1,0 +1,25 @@
+{
+  "name": "dcinside-mcp",
+  "version": "0.1.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@gurumnyang/dcinside.js": "^1.5.2",
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "zod": "^3.25.76"
+  }
+}
