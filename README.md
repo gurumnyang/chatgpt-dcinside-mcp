@@ -4,7 +4,7 @@ ChatGPT MCP Connecter 사용으로 dcinside 크롤링을 지원하는 MCP 서버
 
 ## 요구 사항
 
-- Node.js
+- Node.js 20.18.1+
 
 ## 설치
 
